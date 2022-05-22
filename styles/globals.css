@@ -1,3 +1,8 @@
+@font-face {
+  src: url(../src/fonts/Agustina.otf);
+  font-family: agustina;
+}
+
 html,
 body {
   padding: 0;
