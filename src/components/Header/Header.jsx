@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
-import React from "react";
-import { container, font, bar } from "./HeaderStyle";
+import React, { useState } from "react";
+import { container, logo, bar } from "./HeaderStyle";
 import {
   AppBar,
   Toolbar,
@@ -10,24 +10,72 @@ import {
   Typography,
   Tabs,
   Tab,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
+import DrawerComp from "../Drawer/DrawerComp";
 
+// navbar names
+const pages = [
+  {
+    name: "Home",
+    link: "/",
+  },
+
+  {
+    name: "About",
+    link: "/about",
+  },
+
+  {
+    name: "Projects",
+    link: "/projects",
+  },
+
+  {
+    name: "Blog",
+    link: "/blog",
+  },
+
+  {
+    name: "Contact",
+    link: "/contact",
+  },
+];
 const Header = () => {
+  const [value, setValue] = useState();
+
+  const theme = useTheme();
+  console.log(theme);
+
+  // checking if screen size is md (boolean)
+  const isMarch = useMediaQuery(theme.breakpoints.down("md"));
+  console.log(isMarch);
+
   return (
     <>
       <AppBar position="static">
         <Toolbar css={bar()}>
           <Container maxWidth="lg" css={container()}>
-            <Typography variant="h6" component="a" href="/" css={font()}>
+            {/* Logo */}
+            <Typography variant="h6" component="a" href="/" css={logo()}>
               Jackson Collins-Ikpe
             </Typography>
-            <Tabs textColor="secondary">
-              <Tab label="Home" href="/home" />
-              <Tab label="About" href="/about" />
-              <Tab label="Projects" href="/projects" />
-              <Tab label="Blog" href="/blog" />
-              <Tab label="Contact" href="/contact" />
-            </Tabs>
+            {/* Menu */}
+            {isMarch ? (
+              <DrawerComp pages={pages} />
+            ) : (
+              <Tabs
+                textColor="secondary"
+                value={value}
+                onChange={(e, value) => setValue(value)}
+                indicatorColor="secondary"
+              >
+                {pages.map((page, index) => (
+                  <Tab label={page.name} href={page.link} key={index} />
+                ))}
+              </Tabs>
+            )}
           </Container>
         </Toolbar>
       </AppBar>

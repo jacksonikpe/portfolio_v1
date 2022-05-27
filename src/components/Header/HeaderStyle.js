@@ -6,14 +6,15 @@ export const container = () => css`
   justify-content: space-between;
 `;
 
-export const font = () => css`
+export const logo = () => css`
   padding-top: 1rem;
   font-family: agustina;
   color: #597ff0;
   font-size: 1rem;
+  display: flex;
+  flex-direction: row;
 `;
 
 export const bar = () => css`
-  position: relative;
   background-color: #16161a;
 `;
