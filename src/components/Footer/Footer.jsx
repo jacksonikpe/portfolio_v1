@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <Container maxWidth="lg" css={container()}>
       <Typography variant="body1" css={footerText()}>
-        Built with ❤️ by Jackson Collins-Ikpe
+        Designed & Built with ❤️ by Jackson Collins-Ikpe
       </Typography>
     </Container>
   );
