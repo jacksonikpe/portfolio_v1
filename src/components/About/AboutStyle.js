@@ -4,12 +4,13 @@ export const container = () => css`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 600px;
+  max-height: 2000px;
+  width: 100vw;
 `;
 
 export const title = () => css`
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 35px;
 `;
 
 export const subTitle = () => css`
@@ -19,4 +20,17 @@ export const subTitle = () => css`
 
 export const bodyText = () => css`
   align-self: flex-start;
+  margin-bottom: 30px;
+`;
+
+export const skillText = () => css`
+  margin-left: 0.5rem;
+`;
+
+export const skillBlock = () => css`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 13px;
+  height: 4rem;
 `;
