@@ -16,6 +16,7 @@ import jestLogo from "../public/jest.png";
 import nodejsLogo from "../public/nodejs.png";
 import mongoDBLogo from "../public/mongodb.svg";
 import firebaseLogo from "../public/firebase.svg";
+import chakraUiLogo from "../public/chakraUi.png";
 import awsLogo from "../public/aws.png";
 
 //skills logo and name
@@ -115,6 +116,11 @@ export const skills = [
     img: awsLogo,
     alt: "AWS Logo",
   },
+  {
+    name: "Chakra UI",
+    img: chakraUiLogo,
+    alt: "Chakra UI Logo",
+  },
 ];
 
 // navbar names
@@ -174,5 +180,78 @@ export const project1 = [
   {
     name: "Emotion",
     img: styledComponentLogo,
+  },
+];
+
+export const project2 = [
+  {
+    name: "Html",
+    img: htmlLogo,
+  },
+  {
+    name: "CSS",
+    img: cssLogo,
+  },
+  {
+    name: "JavaScript",
+    img: jsLogo,
+  },
+  {
+    name: "React",
+    img: reactLogo,
+  },
+  {
+    name: "Nextjs",
+    img: nextjsLogo,
+  },
+  {
+    name: "Chakra UI",
+    img: chakraUiLogo,
+  },
+];
+
+export const project3 = [
+  {
+    name: "Html",
+    img: htmlLogo,
+  },
+  {
+    name: "CSS",
+    img: cssLogo,
+  },
+  {
+    name: "JavaScript",
+    img: jsLogo,
+  },
+  {
+    name: "React",
+    img: reactLogo,
+  },
+  {
+    name: "Gatsby",
+    img: gatsbyLogo,
+  },
+  {
+    name: "Graphql",
+    img: graphqlLogo,
+  },
+];
+
+export const project4 = [
+  {
+    name: "Html",
+    img: htmlLogo,
+  },
+  {
+    name: "CSS",
+    img: cssLogo,
+  },
+  {
+    name: "JavaScript",
+    img: jsLogo,
+  },
+  {
+    name: "React",
+    img: reactLogo,
   },
 ];
