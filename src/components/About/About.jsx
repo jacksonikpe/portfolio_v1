@@ -35,6 +35,7 @@ const About = () => {
       <Typography variant="body1" gutterBottom component="div" css={bodyText()}>
         Using a combination of cutting-edge technologies and reliable
         open-source software I build user-focused, performant web-application.
+        These are technologies I have worked with.
       </Typography>
       <Grid container spacing={2}>
         {skills.map((skill, index) => (
