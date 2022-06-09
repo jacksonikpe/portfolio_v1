@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 export const container = () => css`
   padding-top: 70px;
   min-height: 605px;
+  margin-bottom: 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 `;

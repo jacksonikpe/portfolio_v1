@@ -18,6 +18,7 @@ import mongoDBLogo from "../public/mongodb.svg";
 import firebaseLogo from "../public/firebase.svg";
 import awsLogo from "../public/aws.png";
 
+//skills logo and name
 export const skills = [
   {
     name: "HTML",
@@ -113,5 +114,33 @@ export const skills = [
     name: "AWS",
     img: awsLogo,
     alt: "AWS Logo",
+  },
+];
+
+// navbar names
+export const pages = [
+  {
+    name: "Home",
+    link: "#home",
+  },
+
+  {
+    name: "About",
+    link: "#about",
+  },
+
+  {
+    name: "Projects",
+    link: "#projects",
+  },
+
+  {
+    name: "Blog",
+    link: "/blog",
+  },
+
+  {
+    name: "Contact",
+    link: "#contact",
   },
 ];

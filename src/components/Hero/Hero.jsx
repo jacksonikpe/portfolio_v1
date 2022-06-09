@@ -17,7 +17,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <Container maxWidth="lg" css={container()}>
+    <Container maxWidth="lg" css={container()} id="home">
       <Box css={heroText()}>
         <Typography variant="body1" css={intro1()}>
           Hi 👋, my name is
