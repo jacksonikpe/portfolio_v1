@@ -52,11 +52,18 @@ const Hero = () => {
           </Typography>
         </Box>
         <Button size="large" variant="contained" color="secondary">
-          See my Resume
+          <a
+            href="https://drive.google.com/file/d/19HM8LKjCgv74KoQoTdfbRPCdT9oZLR_S/view?usp=sharing"
+            rel="noreferrer noopener"
+            target="_blank"
+            alt="Resume"
+          >
+            See my Resume
+          </a>
         </Button>
         <Box css={socialIcon()}>
           <a
-            href="https://www.google.com"
+            href="https://github.com/jacksonikpe"
             rel="noreferrer noopener"
             target="_blank"
             alt="Github icon"
@@ -64,18 +71,18 @@ const Hero = () => {
             <FiGithub />
           </a>
           <a
-            href="https://www.google.com"
+            href="https://www.linkedin.com/in/jackson-collins-ikpe-187a58138/"
             rel="noreferrer noopener"
             target="_blank"
-            alt="Github icon"
+            alt="Linkedin icon"
           >
             <FiLinkedin />
           </a>
           <a
-            href="https://www.google.com"
+            href="https://twitter.com/Jackson_Ikpe"
             rel="noreferrer noopener"
             target="_blank"
-            alt="Github icon"
+            alt="Twitter icon"
           >
             <FiTwitter />
           </a>
