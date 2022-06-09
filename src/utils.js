@@ -134,10 +134,10 @@ export const pages = [
     link: "#projects",
   },
 
-  {
-    name: "Blog",
-    link: "/blog",
-  },
+  //   {
+  //     name: "Blog",
+  //     link: "/blog",
+  //   },
 
   {
     name: "Contact",

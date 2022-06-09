@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 
 // navbar for md and sm screens
 const DrawerComp = ({ pages }) => {
@@ -18,7 +19,9 @@ const DrawerComp = ({ pages }) => {
         <List>
           {pages.map((page, index) => (
             <ListItemButton onClick={() => setOpenDrawer(false)} key={index}>
-              <ListItemText>{page.name}</ListItemText>
+              <Link href={page.link} key={index} passHref>
+                <ListItemText>{page.name}</ListItemText>
+              </Link>
             </ListItemButton>
           ))}
         </List>
