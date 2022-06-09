@@ -44,3 +44,10 @@ export const intro4 = () => css`
 export const introwrap = () => css`
   max-width: 650px;
 `;
+
+export const socialIcon = () => css`
+  display: flex;
+  justify-content: space-around;
+  width: 160px;
+  margin-top: 10px;
+`;

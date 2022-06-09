@@ -11,9 +11,13 @@ import {
   intro3,
   intro4,
   introwrap,
+  socialIcon,
 } from "./HeroStyle";
 import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation";
 import Typewriter from "typewriter-effect";
+import { FiGithub } from "react-icons/fi";
+import { FiLinkedin } from "react-icons/fi";
+import { FiTwitter } from "react-icons/fi";
 
 const Hero = () => {
   return (
@@ -50,6 +54,32 @@ const Hero = () => {
         <Button size="large" variant="contained" color="secondary">
           See my Resume
         </Button>
+        <Box css={socialIcon()}>
+          <a
+            href="https://www.google.com"
+            rel="noreferrer noopener"
+            target="_blank"
+            alt="Github icon"
+          >
+            <FiGithub />
+          </a>
+          <a
+            href="https://www.google.com"
+            rel="noreferrer noopener"
+            target="_blank"
+            alt="Github icon"
+          >
+            <FiLinkedin />
+          </a>
+          <a
+            href="https://www.google.com"
+            rel="noreferrer noopener"
+            target="_blank"
+            alt="Github icon"
+          >
+            <FiTwitter />
+          </a>
+        </Box>
       </Box>
       <Box css={svgAnimation()}>
         <BackgroundAnimation />
