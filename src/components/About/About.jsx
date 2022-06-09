@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
-import { Subtitles } from "@mui/icons-material";
 import { Container, Typography, Grid, Paper } from "@mui/material";
 import {
   container,

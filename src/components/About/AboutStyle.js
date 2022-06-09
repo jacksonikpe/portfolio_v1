@@ -6,9 +6,11 @@ export const container = () => css`
   align-items: center;
   max-height: 2000px;
   width: 100vw;
+  margin-bottom: 5rem;
 `;
 
 export const title = () => css`
+  color: #fffffe;
   font-weight: 600;
   margin-bottom: 35px;
 `;
