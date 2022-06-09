@@ -2,6 +2,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
 import React, { useState } from "react";
+import Link from "next/link";
 import { container, logo, bar } from "./HeaderStyle";
 import {
   AppBar,
@@ -15,6 +16,7 @@ import {
   useScrollTrigger,
 } from "@mui/material";
 import DrawerComp from "../Drawer/DrawerComp";
+import { pages } from "../../utils";
 
 // navbar elevaton when scrolling
 const ElevationScroll = (props) => {
@@ -30,35 +32,8 @@ const ElevationScroll = (props) => {
   });
 };
 
-// navbar names
-const pages = [
-  {
-    name: "Home",
-    link: "/",
-  },
-
-  {
-    name: "About",
-    link: "/about",
-  },
-
-  {
-    name: "Projects",
-    link: "/projects",
-  },
-
-  {
-    name: "Blog",
-    link: "/blog",
-  },
-
-  {
-    name: "Contact",
-    link: "/contact",
-  },
-];
 const Header = () => {
-  // const [value, setValue] = useState();
+  const [value, setValue] = useState();
 
   const theme = useTheme();
 
@@ -81,12 +56,14 @@ const Header = () => {
               ) : (
                 <Tabs
                   textColor="secondary"
-                  // value={value}
-                  // onChange={(e, value) => setValue(value)}
+                  value={value}
+                  onChange={(e, value) => setValue(value)}
                   indicatorColor="secondary"
                 >
                   {pages.map((page, index) => (
-                    <Tab label={page.name} href={page.link} key={index} />
+                    <Link href={page.link} key={index} passHref>
+                      <Tab label={page.name} />
+                    </Link>
                   ))}
                 </Tabs>
               )}
