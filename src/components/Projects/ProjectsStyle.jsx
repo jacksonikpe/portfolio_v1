@@ -52,10 +52,12 @@ export const right2 = (screenSize) => css`
 `;
 
 export const left2 = (screenSize) => css`
+  display: flex;
   width: 50%;
   margin-right: -200px;
   z-index: 1;
   @media (max-width: ${screenSize}px) {
+    flex-direction: row-reverse;
     width: 80%;
     margin-right: 0;
     margin-bottom: -100px;
@@ -66,11 +68,17 @@ export const projectInfo = () => css`
   padding: 13px;
 `;
 
-export const infoHeader = () => css``;
+export const infoHeader = () => css`
+  color: #fffffe;
+`;
 
 export const linkIcons = () => css`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: 2rem;
+`;
+
+export const projectLogo = () => css`
+  display: flex;
 `;

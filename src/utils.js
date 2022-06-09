@@ -144,3 +144,35 @@ export const pages = [
     link: "#contact",
   },
 ];
+
+//Technologies used for project
+export const project1 = [
+  {
+    name: "Html",
+    img: htmlLogo,
+  },
+  {
+    name: "CSS",
+    img: cssLogo,
+  },
+  {
+    name: "JavaScript",
+    img: jsLogo,
+  },
+  {
+    name: "React",
+    img: reactLogo,
+  },
+  {
+    name: "Nextjs",
+    img: nextjsLogo,
+  },
+  {
+    name: "Material UI",
+    img: materialUiLogo,
+  },
+  {
+    name: "Emotion",
+    img: styledComponentLogo,
+  },
+];

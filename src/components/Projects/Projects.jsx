@@ -1,7 +1,14 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
-import { Container, Typography, Box, Paper, useTheme } from "@mui/material";
+import {
+  Container,
+  Typography,
+  Box,
+  Paper,
+  useTheme,
+  Grid,
+} from "@mui/material";
 import {
   container,
   title,
@@ -13,12 +20,13 @@ import {
   right2,
   left2,
   linkIcons,
+  projectLogo,
 } from "./ProjectsStyle";
 import Image from "next/image";
 import img from "../../../public/capture.png";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import Link from "next/link";
+import { project1 } from "../../utils";
 
 const Projects = () => {
   //check for screen size
@@ -49,6 +57,18 @@ const Projects = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
               possimus qui amet consectetur adipisicing elit. Magni possimus qui
             </Typography>
+            <Box css={projectLogo()}>
+              {project1.map((project, index) => (
+                <Box ml={2} key={index}>
+                  <Image
+                    src={project.img}
+                    width={20}
+                    height={20}
+                    alt={project.name}
+                  />
+                </Box>
+              ))}
+            </Box>
           </Paper>
           <Box css={linkIcons}>
             <a
@@ -72,6 +92,24 @@ const Projects = () => {
       </Box>
       <Box css={project(screenSize)}>
         <Box css={left2(screenSize)}>
+          <Box css={linkIcons}>
+            <a
+              href="https://www.google.com"
+              rel="noreferrer noopener"
+              target="_blank"
+              alt="Github icon"
+            >
+              <FiGithub />
+            </a>
+            <a
+              href="https://www.google.com"
+              rel="noreferrer noopener"
+              target="_blank"
+              alt="Github icon"
+            >
+              <HiOutlineExternalLink />
+            </a>
+          </Box>
           <Paper css={projectInfo()}>
             <Typography variant="h5" css={infoHeader()}>
               This is a Header
