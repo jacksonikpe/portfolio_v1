@@ -76,7 +76,7 @@ const Projects = () => {
           </Paper>
           <Box css={linkIcons}>
             <a
-              href="https://www.google.com"
+              href="https://github.com/jacksonikpe/portfolio_v1"
               rel="noreferrer noopener"
               target="_blank"
               alt="Github icon"
